@@ -16,7 +16,7 @@ html, body {
 }
 
 .hero {
-  background: url(/public/img/password.jpg) center no-repeat;
+  background: url(../img/password.jpg) center no-repeat;
   height: 100%;
   width: 100%;
   display: table;
