@@ -52,7 +52,7 @@ h1 {
 
 .generator {
   margin: auto;
-  width: 500px;
+  width: 400px;
   height: 200px;
   padding: 10px;
   text-align: center;
@@ -85,6 +85,7 @@ h1 {
   .navbar a {
     float: none;
     display: block;
+    font-size: inherit;
   }
 
   .nav-centered a {
@@ -95,10 +96,72 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .generator {
       margin: auto;
       width: 250px;
+      height: 200px;
+      padding: 10px;
+      text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .generator {
+      margin: auto;
+      width: 250px;
+      height: 200px;
+      padding: 10px;
+      text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .generator {
+      margin: auto;
+      width: 250px;
+      height: 200px;
+      padding: 10px;
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .generator {
+      margin: auto;
+      width: 340px;
+      height: 200px;
+      padding: 10px;
+      text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .generator {
+      margin: auto;
+      width: 390px;
+      height: 200px;
+      padding: 10px;
+      text-align: center;
+  }
+}
+
+@media (max-width: 1440px) {
+  .generator {
+      margin: auto;
+      width: 480px;
+      height: 200px;
+      padding: 10px;
+      text-align: center;
+      font-weight: 200;
+      font-size: larger;
+  }
+}
+
+@media (max-width: 408px) {
+  .generator {
+      margin: auto;
+      width: 280px;
       height: 200px;
       padding: 10px;
       text-align: center;
