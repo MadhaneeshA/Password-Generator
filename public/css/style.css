@@ -15,8 +15,9 @@ html, body {
   object-fit: cover;
 }
 
-.hero {
-  background: url(../img/password.jpg) center no-repeat;
+#top {
+  background: url('../img/password.jpg') center no-repeat;
+  background-color: aqua;
   height: 100%;
   width: 100%;
   display: table;
