@@ -94,3 +94,13 @@ h1 {
     transform: none;
   }
 }
+
+@media (max-width: 768px) {
+  .generator {
+      margin: auto;
+      width: 250px;
+      height: 200px;
+      padding: 10px;
+      text-align: center;
+  }
+}
