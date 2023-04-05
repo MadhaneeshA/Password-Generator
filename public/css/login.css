@@ -9,14 +9,14 @@
     font-family: Arial, sans-serif;
   }
   
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+.contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
   
-  form {
+  .form {
     background-color: #ffffff;
     padding: 50px;
     border-radius: 10px;
@@ -25,7 +25,7 @@
   
   h1 {
     font-size: 36px;
-    text-align: center;
+    
     margin-bottom: 20px;
   }
   
