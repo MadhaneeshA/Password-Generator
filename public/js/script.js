@@ -28,6 +28,7 @@ function generatePassword() {
     password += chars.charAt(randomIndex);
   }
   document.getElementById("password").value = password;
+  document.getElementById('copy-btn').querySelector('i.fa-regular').classList.add('fa-beat');
 }
 
 function copypassword() {
@@ -36,4 +37,5 @@ function copypassword() {
     copyText.setSelectionRange(0, length); // For mobile devices
     navigator.clipboard.writeText(copyText.value);
     copyText.value = '';
+    document.getElementById('copy-btn').querySelector('i.fa-regular').classList.remove('fa-beat');
   }
