@@ -6,31 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css"> 
 </head>
-<body>
+<body> 
     <div class="navbar">
         <div class="nav-centered">
             <a href="#">Password Generator</a>
         </div>
-        <a href="./login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-    </div>  
+        <a href="./login.html"><i class="fa fa-fw fa-user"></i> login</a>
+    </div>
     <div id="top" class="hero">    
-            <div class="pass-center overlay">
+            <div class="pass-center">
                 <div class="generator">
                     <label class="text" for="length">Length <input class="input" type="number" id="length" name="length" min="8" max="128" value="12"></label>
                     <label class="text" for="uppercase">Uppercase <input class="input" type="checkbox" id="uppercase" name="uppercase"></label>
                     <label class="text" for="lowercase">Lowercase <input class="input" type="checkbox" id="lowercase" name="lowercase" checked></label>
                     <label class="text" for="numbers">Numbers <input class="input" type="checkbox" id="numbers" name="numbers" checked></label>
                     <label class="text" for="symbols">Symbols <input class="input" type="checkbox" id="symbols" name="symbols"></label>
-                    <div class="bnt bnt1">
+                    <div class="bnt gen">
                       <button type="button" onclick="generatePassword()">Generate <i class="fa-solid fa-gear fa-spin"></i></button>
                     </div>
-                    <input class="text password" type="text" id="password" name="password" readonly>
-                    <div class="bnt bnt2">
+                    <div class="text">
+                      <input class="password" type="text" id="password" name="password" readonly>
+                    </div>
+                    <div class="bnt copy">
                       <button type="button" onclick="copypassword()">copy <i class="fa-regular fa-copy fa-beat"></i></button>
                     </div>
-                   
                 </div>          
             </div>
     </div>
