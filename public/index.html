@@ -5,40 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="top" class="hero background-overlay">
-        <div class="navbar">
-            <div class="nav-centered">
-                <a href="#">Password Generator</a>
-              </div>
-              <a href="./login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-            <div class="pass-center">
-                <div class="generator">
-                    <label class="text" for="length">Password Length:</label>
-                    <input type="number" id="length" name="length" min="8" max="128" value="12">
-                    <br>
-                    <label class="text" for="uppercase">Include Uppercase:</label>
-                    <input type="checkbox" id="uppercase" name="uppercase">
-                    <br>
-                    <label class="text" for="lowercase">Include Lowercase:</label>
-                    <input type="checkbox" id="lowercase" name="lowercase" checked>
-                    <br>
-                    <label class="text" for="numbers">Include Numbers:</label>
-                    <input type="checkbox" id="numbers" name="numbers" checked>
-                    <br>
-                    <label class="text" for="symbols">Include Symbols:</label>
-                    <input type="checkbox" id="symbols" name="symbols">
-                    <br>
-                    <button type="btn-1" onclick="generatePassword()">Generate Password</button>
-                    <br>
-                    <input class="text" type="text" id="password" name="password" readonly>
-                    <br>
-                    <button type="btn-2" onclick="copypassword()">copy to clipboard</button>
-                  </div>          
-            </div>
+    <div class="navbar">
+        <div class="nav-centered">
+            <a href="#">Password Generator</a>
         </div>
+        <a href="./login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+    </div>  
+    <div id="top" class="hero">    
+            <div class="pass-center overlay">
+                <div class="generator">
+                    <label class="text" for="length">Length <input class="input" type="number" id="length" name="length" min="8" max="128" value="12"></label>
+                    <label class="text" for="uppercase">Uppercase <input class="input" type="checkbox" id="uppercase" name="uppercase"></label>
+                    <label class="text" for="lowercase">Lowercase <input class="input" type="checkbox" id="lowercase" name="lowercase" checked></label>
+                    <label class="text" for="numbers">Numbers <input class="input" type="checkbox" id="numbers" name="numbers" checked></label>
+                    <label class="text" for="symbols">Symbols <input class="input" type="checkbox" id="symbols" name="symbols"></label>
+                    <div class="bnt bnt1">
+                      <button type="button" onclick="generatePassword()">Generate <i class="fa-solid fa-gear fa-spin"></i></button>
+                    </div>
+                    <input class="text password" type="text" id="password" name="password" readonly>
+                    <div class="bnt bnt2">
+                      <button type="button" onclick="copypassword()">copy <i class="fa-regular fa-copy fa-beat"></i></button>
+                    </div>
+                   
+                </div>          
+            </div>
     </div>
     <script src="./js/script.js"></script>
 </body>

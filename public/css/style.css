@@ -3,59 +3,6 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
-}
-
-.img-res {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
-
-#top {
-  background: url('../img/password.jpg') center no-repeat;
-  background-color: aqua;
-  height: 100%;
-  width: 100%;
-  display: table;
-  position: relative;
-  background-size: cover;
-}
-
-.background-overlay:before {
-  content: '';
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-h1 {
-  text-align: center;
-  color: aliceblue;
-}
-  
-.pass-center{
-  display: flex;
-  position: fixed;
-  top: 45%;
-  left: 40%;
-  margin-top: -50px;
-  margin-left: -100px;
-}
-
-.generator {
-  margin: auto;
-  width: 500px;
-  height: 200px;
-  padding: 10px;
-  text-align: center;
 }
 
 .navbar {
@@ -96,64 +43,72 @@ h1 {
   }
 }
 
-@media (max-width: 320px) {
-  .generator {
-      margin: auto;
-      width: 250px;
-      height: 200px;
-      padding: 10px;
-      text-align: center;
-  }
+.img-res {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
-@media (max-width: 375px) {
-  .generator {
-      margin: auto;
-      width: 250px;
-      height: 200px;
-      padding: 10px;
-      text-align: center;
-  }
+.hero {
+  background: url('../img/password.jpg') center no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: fixed;
+}
+  
+.pass-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-@media (max-width: 425px) {
-  .generator {
-      margin: auto;
-      width: 250px;
-      height: 200px;
-      padding: 10px;
-      text-align: center;
-  }
+.generator {
+  background-color: hsla(201, 100%, 6%, 0.6);
+  padding: 50px 30px;
+  min-width: 400px;
+  width: 50%;
+  max-width: 600px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
 }
 
-@media (max-width: 768px) {
-  .generator {
-      margin: auto;
-      width: 340px;
-      height: 200px;
-      padding: 10px;
-      text-align: center;
-  }
+.generator label{
+  color: #f2f2f2;
+  font-weight:lighter;
+  font-size: 1.5em;
+  margin-bottom: 7px;
 }
 
-@media (max-width: 1024px) {
-  .generator {
-      margin: auto;
-      width: 390px;
-      height: 200px;
-      padding: 10px;
-      text-align: center;
-  }
+.password{
+  text-align: center;
+  font-size: 0.75em;
+  padding: 1.8px 4.5px;
+  color: white;
+  font-weight: lighter;
+  border-radius: 5px;
+  background-color:  hsla(201, 100%, 91%, 0.3);
+  border: 1px solid hsla(201, 100%, 6%);
 }
 
-@media (max-width: 1440px) {
-  .generator {
-      margin: auto;
-      width: 480px;
-      height: 200px;
-      padding: 10px;
-      text-align: center;
-      font-weight: 200;
-      font-size: larger;
-  }
+.generator .input{
+  font-size: 0.75em;
+  padding: 0.1em 0.25em;
+  background-color:  hsla(201, 100%, 91%, 0.3);
+  border: 1px solid hsla(201, 100%, 6%);
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: lighter;
 }

@@ -36,5 +36,4 @@ function copypassword() {
     copyText.setSelectionRange(0, length); // For mobile devices
     navigator.clipboard.writeText(copyText.value);
     copyText.value = '';
-
   }
